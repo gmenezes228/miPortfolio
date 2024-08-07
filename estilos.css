@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    background-color: #580054;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#footer {
+    background-color: #ffe8fe;
+    color: black;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer .titulo {
+    font-size: 25px; 
+    color: #580054;
+    font-weight: bold; 
+}
+
+/* Estilo para las secciones */
+main {
+    padding: 2em;
+}
+
+#sobre-mi {
+    text-align: center;
+}
+
+.experiencia, .proyectos {
+    margin-top: 2em;
+}
+
+img {
+    width: 100px;  
+    height: auto;
+    border-radius: 10%;
+}
+
+a {
+    color:#006ba9;
+}
+

@@ -1,16 +1,37 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 #header {
-    background-color: #580054;
+    background-color: #34003a;
     color: white;
-    text-align: center;
-    padding: 1em 0;
+    padding: 1em 2em; /* Espacio lateral para el contenido del header */
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+}
+
+.header1 {
+    flex: 1; /* Toma el espacio disponible entre la imagen y el borde del header */
+    display: flex;
+    flex-direction: column; /* Organiza el texto en columna */
+    align-items: center; /* Centra el texto horizontalmente dentro de este contenedor */
+    text-align: center; /* Centra el texto dentro de este contenedor */
+}
+
+.header1 h1,
+.header1 p {
+    margin: 0;
+}
+
+.img img {
+    width: 100px;  
+    height: auto;
+    border-radius: 10%;
 }
 
 #footer {
-    background-color: #ffe8fe;
+    background-color: #fae6ff;
     color: black;
     text-align: center;
     padding: 1em 0;
@@ -20,11 +41,10 @@ body {
 
 #footer .titulo {
     font-size: 25px; 
-    color: #580054;
+    color: #0c001b;
     font-weight: bold; 
 }
 
-/* Estilo para las secciones */
 main {
     padding: 2em;
 }
@@ -33,17 +53,19 @@ main {
     text-align: center;
 }
 
-.experiencia, .proyectos {
+.proyectos {
     margin-top: 2em;
-}
-
-img {
-    width: 100px;  
-    height: auto;
-    border-radius: 10%;
+    text-align: left;
 }
 
 a {
-    color:#006ba9;
+    color: #006ba9;
 }
 
+.img {
+    margin-left: auto; /* Empuja la imagen hacia la derecha */
+}
+
+.experiencia {
+    text-align: center;
+}
